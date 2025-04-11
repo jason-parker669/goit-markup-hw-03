@@ -192,38 +192,48 @@ header .container {
   padding: 188px 472px;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 120px;
 }
 
 .why-us .container {
   max-width: 1128px;
   padding-left: 0;
   padding-right: 0;
+  margin-top: 0;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 120px;
 }
 
 .team .container {
   max-width: 1440px;
+  padding-top: 120px;
+  padding-bottom: 120px;
   padding-left: 156px;
   padding-right: 156px;
+  margin-top: 0;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 120px;
 }
 
 .portfolio .container {
   max-width: 1128px;
   padding-left: 0;
   padding-right: 0;
+  margin-top: 0;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 120px;
 }
 
 footer .container {
   max-width: 1440px;
-  padding-left: 156px;
-  padding-right: 1020px;
+  padding: 100px 1020px 100px 156px;
+  margin-top: 0;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 0;
 }
 
 /* #endregion SECTION CONTAINERS*/
@@ -258,6 +268,52 @@ header address ul {
 
 .section-heading {
   text-align: center;
+}
+.team .section-heading {
+  margin-bottom: 72px;
+}
+
+.why-us ul {
+  display: flex;
+  gap: 24px;
+}
+
+.team ul {
+  display: flex;
+  gap: 24px;
+}
+
+.team .image-subscript {
+  margin: 32px 16px;
+  text-align: center;
+}
+
+.team .section-small-heading {
+  margin-bottom: 8px;
+}
+
+.portfolio .section-heading {
+  margin-bottom: 72px;
+}
+
+.portfolio ul {
+  display: flex;
+  column-gap: 24px;
+  row-gap: 48px;
+  flex-wrap: wrap;
+}
+
+.portfolio .image-subscript {
+  margin: 32px 16px;
+}
+
+.portfolio .section-small-heading {
+  margin-bottom: 8px;
+}
+
+footer .footer-logo {
+  display: block;
+  margin-bottom: 16px;
 }
 
 /* #endregion SECTIONS STRUCTURE */
