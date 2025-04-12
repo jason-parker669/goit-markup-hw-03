@@ -1,7 +1,3 @@
-.why-us .section-heading {
-  margin-bottom: 8px;
-}
-
 /* #region TYPOGRAPHY */
 .font-small-heading {
   font-family: "Roboto", sans-serif;
@@ -143,18 +139,6 @@
 /* #endregion COLORS */
 
 /* #region DEFAULT SETTINGS */
-.visually-hidden {
-  position: absolute;
-  white-space: nowrap;
-  width: 1px;
-  height: 1px;
-  overflow: hidden;
-  border: 0;
-  padding: 0;
-  clip: rect(0 0 0 0);
-  clip-path: inset(50%);
-  margin: -1px;
-}
 
 body {
   font-family: "Roboto", sans-serif;
@@ -302,6 +286,19 @@ footer .container {
 
 .why-us .small-heading {
   margin: 0 0 8px 0;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 .why-us .merit-points {
