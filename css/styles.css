@@ -254,7 +254,7 @@ footer .container {
   margin-right: 76px;
 }
 
-.header-style .nav-menu {
+.header-style ul {
   display: flex;
   gap: 40px;
   padding: 24px 0;
