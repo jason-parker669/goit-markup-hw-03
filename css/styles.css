@@ -1,3 +1,7 @@
+.why-us .section-heading {
+  margin-bottom: 8px;
+}
+
 /* #region TYPOGRAPHY */
 .font-small-heading {
   font-family: "Roboto", sans-serif;
@@ -254,10 +258,11 @@ footer .container {
   margin-right: 76px;
 }
 
-.header-style ul {
+.header-style .nav-menu {
   display: flex;
   gap: 40px;
-  padding: 24px 0;
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 
 .nav-menu .link-structure {
