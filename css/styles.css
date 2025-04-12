@@ -261,11 +261,11 @@ footer .container {
 .header-style .nav-menu {
   display: flex;
   gap: 40px;
-  padding-top: 24px;
-  padding-bottom: 24px;
 }
 
 .nav-menu .link-structure {
+  display: inline-block;
+  padding: 24px 0;
 }
 
 .header-style .address-list {
@@ -297,7 +297,11 @@ footer .container {
   padding: 120px 0;
 }
 
-.why-us h2 {
+.why-us .section-heading {
+  margin-bottom: 8px;
+}
+
+.why-us .section-small-heading {
   margin-bottom: 8px;
 }
 
