@@ -139,6 +139,18 @@
 /* #endregion COLORS */
 
 /* #region DEFAULT SETTINGS */
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
 
 body {
   font-family: "Roboto", sans-serif;
@@ -171,19 +183,6 @@ img {
 }
 a {
   text-decoration: none;
-}
-
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  white-space: nowrap;
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
 }
 
 /* #endregion DEFAULT SETTINGS*/
@@ -291,6 +290,10 @@ footer .container {
   padding: 120px 0;
 }
 
+.why-us h2 {
+  margin-bottom: 8px;
+}
+
 .why-us .merit-points {
   display: flex;
   gap: 24px;
@@ -298,10 +301,6 @@ footer .container {
 
 .why-us .merit-point {
   width: calc((100% - 72px) / 4);
-}
-
-.why-us .section-heading {
-  margin-bottom: 8px;
 }
 
 .section-heading {
