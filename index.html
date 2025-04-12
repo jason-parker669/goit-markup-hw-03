@@ -10,8 +10,8 @@
     />
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.css"
-      integrity="sha512-gnAN+RgTMylunXI7AMg+PtcUGpKZFkZJoFIkAWvdPFRrFJz3p2tx4+9xbjILRfN7CzoViMgS8vSf06fSQzWZjA=="
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
+      integrity="sha512-q6WgHqiHlKyOqslT/lgBgodhd03Wp4BEqKeW6nNtlOY4quzyG3VoQKFrieaCeSnuVseNKRGpGeDU3qPmabCANg=="
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
@@ -26,20 +26,26 @@
   </head>
 
   <body>
-    <header>
+    <header class="header-style">
       <div class="container">
         <nav class="font-small-heading">
-          <a href="./index.html" class="font-logo typography-logo color-logo"
+          <a
+            href="./index.html"
+            class="font-logo typography-logo color-logo header-logo"
             >web<span class="color-logo-accent">Studio</span></a
           >
-          <ul>
-            <li><a href="./index.html" class="color-link">Studio</a></li>
-            <li><a href="" class="color-link">Portfolio</a></li>
-            <li><a href="" class="color-link">Contacts</a></li>
+          <ul class="nav-menu">
+            <li>
+              <a href="./index.html" class="color-link link-structure"
+                >Studio</a
+              >
+            </li>
+            <li><a href="" class="color-link link-structure">Portfolio</a></li>
+            <li><a href="" class="color-link link-structure">Contacts</a></li>
           </ul>
         </nav>
         <address class="font-text">
-          <ul>
+          <ul class="address-list">
             <li>
               <a href="mailto:info@devstudio.com" class="color-address"
                 >info@devstudio.com</a
@@ -72,16 +78,18 @@
       <!-- #region WHY US -->
       <section class="why-us">
         <div class="container">
-          <h2 class="section-heading font-section-heading" hidden>Why Us</h2>
-          <ul>
-            <li>
+          <h2 class="section-heading font-section-heading visually-hidden">
+            Why Us
+          </h2>
+          <ul class="merit-points">
+            <li class="merit-point">
               <h3 class="section-small-heading font-small-heading">Strategy</h3>
               <p class="text">
                 Our goal is to identify the business problem to walk away with
                 the perfect and creative solution.
               </p>
             </li>
-            <li>
+            <li class="merit-point">
               <h3 class="section-small-heading font-small-heading">
                 Punctuality
               </h3>
@@ -90,7 +98,7 @@
                 within the shortest possible time.
               </p>
             </li>
-            <li>
+            <li class="merit-point">
               <h3 class="section-small-heading font-small-heading">
                 Diligence
               </h3>
@@ -99,7 +107,7 @@
                 opportunities and minimize risk.
               </p>
             </li>
-            <li>
+            <li class="merit-point">
               <h3 class="section-small-heading font-small-heading">
                 Technologies
               </h3>
@@ -116,7 +124,7 @@
       <section class="team">
         <div class="container">
           <h2 class="section-heading font-section-heading">Our Team</h2>
-          <ul>
+          <ul class="team-members">
             <li class="box">
               <img
                 src="./images/team1.jpg"
@@ -181,8 +189,8 @@
       <section class="portfolio">
         <div class="container">
           <h2 class="section-heading font-section-heading">Our Portfolio</h2>
-          <ul>
-            <li>
+          <ul class="portfolio-cards">
+            <li class="portfolio-card">
               <img
                 src="./images/banking-app.jpg"
                 alt="Banking application user interface"
@@ -196,7 +204,7 @@
                 <p class="text">App</p>
               </div>
             </li>
-            <li>
+            <li class="portfolio-card">
               <img
                 src="./images/cashless-payment.jpg"
                 alt="A payment being made by phone"
@@ -210,7 +218,7 @@
                 <p class="text">Marketing</p>
               </div>
             </li>
-            <li>
+            <li class="portfolio-card">
               <img
                 src="./images/meditation.jpg"
                 alt="A computer and a phone with thoughtful phrases"
@@ -224,7 +232,7 @@
                 <p class="text">App</p>
               </div>
             </li>
-            <li>
+            <li class="portfolio-card">
               <img
                 src="./images/taxi-service.jpg"
                 alt="A driver in a car"
@@ -238,7 +246,7 @@
                 <p class="text">Marketing</p>
               </div>
             </li>
-            <li>
+            <li class="portfolio-card">
               <img
                 src="./images/screen-illustrations.jpg"
                 alt="Beautiful illustrations on phones"
@@ -252,7 +260,7 @@
                 <p class="text">Design</p>
               </div>
             </li>
-            <li>
+            <li class="portfolio-card">
               <img
                 src="./images/online-courses.jpg"
                 alt="A happy woman studying on her phone"

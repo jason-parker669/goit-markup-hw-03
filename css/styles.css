@@ -72,21 +72,21 @@
   color: #4d5ae5;
 }
 
-header .color-link {
+.header-style .color-link {
   color: #2e2f42;
 }
 .color-logo-accent {
   color: #2e2f42;
 }
 
-header .color-address {
+.header-style .color-address {
   color: #434455;
 }
 
-header .color-link:hover,
-header .color-link:focus,
-header .color-address:hover,
-header .color-address:focus {
+.header-style .color-link:hover,
+.header-style .color-link:focus,
+.header-style .color-address:hover,
+.header-style .color-address:focus {
   color: #404bbf;
 }
 
@@ -173,13 +173,27 @@ a {
   text-decoration: none;
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 /* #endregion DEFAULT SETTINGS*/
 
 /* #region SECTION CONTAINERS */
 
-header .container {
+.header-style .container {
   max-width: 1440px;
-  padding: 24px 156px;
+  width: 1158px;
+  padding: 0 15px;
   margin-left: auto;
   margin-right: auto;
   display: flex;
@@ -189,7 +203,6 @@ header .container {
 
 .hero .container {
   max-width: 1440px;
-  padding: 188px 472px;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 120px;
@@ -197,8 +210,7 @@ header .container {
 
 .why-us .container {
   max-width: 1128px;
-  padding-left: 0;
-  padding-right: 0;
+  padding: 120px 0;
   margin-top: 0;
   margin-left: auto;
   margin-right: auto;
@@ -239,52 +251,86 @@ footer .container {
 /* #endregion SECTION CONTAINERS*/
 
 /* #region SECTIONS STRUCTURE*/
-header nav {
+.header-style {
+  border-bottom: 1px solid #e7e9fc;
+}
+.header-style nav {
   display: flex;
-  gap: 76px;
+  align-items: center;
+}
+.header-style .header-logo {
+  display: inline-block;
+  margin-right: 76px;
 }
 
-header nav ul {
+.header-style .nav-menu {
   display: flex;
   gap: 40px;
 }
 
-header address ul {
+.nav-menu .link-structure {
+  padding: 24px 0;
+}
+
+.header-style .address-list {
   display: flex;
   gap: 40px;
 }
 
 .hero {
   text-align: center;
+  padding: 188px 0;
 }
 .hero .hero-heading {
+  max-width: 496px;
   margin-bottom: 48px;
 }
 
 .hero .hero-button {
+  display: block;
+  min-width: 169px;
   padding: 16px 32px;
+  height: 56px;
+  border: none;
   border-radius: 4px;
+}
+
+.why-us .merit-points {
+  display: flex;
+  gap: 24px;
+}
+
+.why-us .merit-point {
+  width: calc((100% - 72px) / 4);
+}
+
+.why-us .section-heading {
+  margin-bottom: 8px;
 }
 
 .section-heading {
   text-align: center;
 }
+
+.team {
+  padding: 120px 0;
+}
+
 .team .section-heading {
   margin-bottom: 72px;
 }
 
-.why-us ul {
+.team .team-members {
   display: flex;
   gap: 24px;
 }
 
-.team ul {
-  display: flex;
-  gap: 24px;
+.team-members .box {
+  border-radius: 0px 0px 4px 4px;
 }
 
 .team .image-subscript {
-  margin: 32px 16px;
+  padding: 32px 0;
   text-align: center;
 }
 
@@ -292,11 +338,14 @@ header address ul {
   margin-bottom: 8px;
 }
 
+.portfolio {
+  padding: 120px 0 120px 0;
+}
 .portfolio .section-heading {
   margin-bottom: 72px;
 }
 
-.portfolio ul {
+.portfolio .portfolio-cards {
   display: flex;
   column-gap: 24px;
   row-gap: 48px;
@@ -304,15 +353,20 @@ header address ul {
 }
 
 .portfolio .image-subscript {
-  margin: 32px 16px;
+  padding: 32px 16px;
+  border: 1px solid #e7e9fc;
 }
 
 .portfolio .section-small-heading {
   margin-bottom: 8px;
 }
 
+.footer-style {
+  padding: 100px 0;
+}
+
 footer .footer-logo {
-  display: block;
+  display: inline-block;
   margin-bottom: 16px;
 }
 
