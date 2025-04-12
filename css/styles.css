@@ -56,7 +56,7 @@
   text-transform: capitalize;
 }
 
-.section-small-heading {
+.small-heading {
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
@@ -119,7 +119,7 @@
   color: #2e2f42;
 }
 
-.section-small-heading {
+.small-heading {
   color: #2e2f42;
 }
 
@@ -261,11 +261,14 @@ footer .container {
 .header-style .nav-menu {
   display: flex;
   gap: 40px;
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 
 .nav-menu .link-structure {
   display: inline-block;
-  padding: 24px 0;
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 
 .header-style .address-list {
@@ -297,12 +300,8 @@ footer .container {
   padding: 120px 0;
 }
 
-.why-us .section-heading {
-  margin-bottom: 8px;
-}
-
-.why-us .section-small-heading {
-  margin-bottom: 8px;
+.why-us .small-heading {
+  margin: 0 0 8px 0;
 }
 
 .why-us .merit-points {
@@ -340,7 +339,7 @@ footer .container {
   text-align: center;
 }
 
-.team .section-small-heading {
+.team .small-heading {
   margin-bottom: 8px;
 }
 
@@ -364,7 +363,7 @@ footer .container {
   border-top: none;
 }
 
-.portfolio .section-small-heading {
+.portfolio .small-heading {
   margin-bottom: 8px;
 }
 
