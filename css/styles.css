@@ -278,7 +278,9 @@ footer .container {
 }
 
 .hero .hero-button {
-  display: inline-block;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
   min-width: 169px;
   padding: 16px 32px;
   height: 56px;
